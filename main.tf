@@ -6,6 +6,11 @@ resource "aws_vpc" "main" {
 }
 resource "aws_vpc" "mainvpc" {
   cidr_block = "35.35.0.0/16"
+}
 resource "aws_vpc" "mainvpc" {
   cidr_block = "35.35.0.0/16"
-}}
+}
+resource "aws_instance" "myec2"{
+ ami_id = "myami"
+ type = "mytype"
+}
